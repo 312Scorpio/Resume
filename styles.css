@@ -34,12 +34,13 @@ body
     font-size: 22px;
     font-family: "Aladin", system-ui;
 }
-.centered
+.image
 {
     display: block;
     object-fit: cover;
     position: sticky;
-    margin-left: 85pt;
-    margin-right: 85pt;
-    width: 70%
+    border: 1px solid lightgray;
+    padding: 15px;
+    margin: 0% 25% 0% 25%;
+    width: 50%
 }
