@@ -33,11 +33,6 @@ body
 }
 
 /* Classes */
-.aladdin
-{
-    font-size: 22px;
-    font-family: "Aladin", system-ui;
-}
 .centered
 {
     text-align: center;
@@ -53,6 +48,13 @@ body
     width: 50%;
     border-radius: 20%;
     padding: 0px;
+}
+
+/* IDs */
+#aladdin
+{
+    font-size: 22px;
+    font-family: "Aladin", system-ui;
 }
 #offset
 {
