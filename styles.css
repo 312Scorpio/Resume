@@ -60,8 +60,9 @@ a:visited {
 }
 .container
 {
+    background-color: #f8f8f86f;
     display: flex;
-    gap: 20px;
+    gap: 16px;
 }
 .image
 {
