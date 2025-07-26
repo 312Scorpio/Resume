@@ -58,6 +58,11 @@ a:visited {
 {
     text-align: center;
 }
+.container
+{
+    display: flex;
+    gap: 20px;
+}
 .image
 {
     display: block;
@@ -73,6 +78,11 @@ a:visited {
 .invisible
 {
     visibility: hidden;
+}
+.people
+{
+    font-size: 18pt;
+    font-family: "Kolker Brush", system-ui;
 }
 
 /* IDs */
@@ -94,5 +104,5 @@ a:visited {
 {
     h1{font-size: 85px;}
     h2{font-size: 16px;}
-    .image{height: 165px;}
+    .image{height: 150px;}
 }
