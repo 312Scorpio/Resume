@@ -32,6 +32,26 @@ body
 {
     background-color: #E5E0D8;
 }
+a:link {
+  color: #01905e;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:hover {
+  color: #019084;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:active {
+  color: darkorange;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: rgb(0, 26, 0);
+  background-color: transparent;
+  text-decoration: none;
+}
 
 /* Classes */
 .centered
@@ -49,6 +69,10 @@ body
     width: 50%;
     border-radius: 20%;
     padding: 0px;
+}
+.invisible
+{
+    visibility: hidden;
 }
 
 /* IDs */
