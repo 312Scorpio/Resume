@@ -1,7 +1,7 @@
 // generate random number from 1-3
 var randomNumber = Math.floor(Math.random() * 3) + 1;
 
-// play 1of3 audio tracks
+// select random audio track
 if (randomNumber === 1)
 {
     var audio = new Audio("./assets/sounds/mercy.mp3");
@@ -14,4 +14,13 @@ else
 {
     var audio = new Audio("./assets/sounds/conscience.mp3");
 }
-audio.play();
+
+// set image
+var image = document.querySelectorAll(".image");
+
+// toggle audio on image clicks
+image.addEventListener("click", function ()
+{
+    if (audio.paused) {audio.play();}
+    else {audio.pause();}
+});
