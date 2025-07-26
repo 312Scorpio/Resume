@@ -98,7 +98,7 @@ a:visited {
 }
 #offset
 {
-    font-size: 12pt;
+    font-size: 1rem;
     position: relative;
     left: 30px;
     margin-right: 30px;
@@ -109,5 +109,5 @@ a:visited {
 {
     h1{font-size: 85px;}
     h2{font-size: 16px;}
-    .image{height: 140px;}
+    .image{height: 130px;}
 }

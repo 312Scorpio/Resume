@@ -1,3 +1,10 @@
+// toggle audio
+function toggleAudio(audio)
+{
+    if (audio.paused) {audio.play();}
+    else {audio.pause();}
+}
+
 // generate random number from 1-4
 var randomNumber = Math.floor(Math.random() * 4) + 1;
 
@@ -16,8 +23,10 @@ else
 }
 
 // toggle audio on image clicks
-document.images[0].addEventListener("click", function ()
+document.images[0].addEventListener("click", function () {toggleAudio(audio);}, false);
+
+// toggle audio on spacebar keypress
+document.addEventListener("keypress", function(event)
 {
-    if (audio.paused) {audio.play();}
-    else {audio.pause();}
-}, false);
+    if (event.code == "Space" || event.keycode == 32) {toggleAudio(audio);}
+});
