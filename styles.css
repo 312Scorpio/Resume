@@ -58,12 +58,6 @@ a:visited {
 {
     text-align: center;
 }
-.container
-{
-    background-color: #f8f8f856;
-    display: flex;
-    gap: 16px;
-}
 .image
 {
     display: block;
@@ -80,10 +74,20 @@ a:visited {
 {
     visibility: hidden;
 }
+.light
+{
+    background-color: #f8f8f856;
+}
 .people
 {
     font-size: 18pt;
     font-family: "Kolker Brush", system-ui;
+}
+.split
+{
+    
+    display: flex;
+    gap: 16px;
 }
 
 /* IDs */
