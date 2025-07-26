@@ -1,8 +1,8 @@
-// generate random number from 1-3
-var randomNumber = Math.floor(Math.random() * 3) + 1;
+// generate random number from 1-4
+var randomNumber = Math.floor(Math.random() * 4) + 1;
 
-// select random audio track
-if (randomNumber === 1)
+// select audio track
+if (randomNumber in [1, 2])
 {
     var audio = new Audio("./assets/sounds/mercy.mp3");
 }
@@ -15,12 +15,9 @@ else
     var audio = new Audio("./assets/sounds/conscience.mp3");
 }
 
-// set image
-var image = document.querySelectorAll(".image");
-
 // toggle audio on image clicks
-image.addEventListener("click", function ()
+document.images[0].addEventListener("click", function ()
 {
     if (audio.paused) {audio.play();}
     else {audio.pause();}
-});
+}, false);
