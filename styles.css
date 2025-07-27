@@ -56,7 +56,6 @@ a:visited {
 /* Classes */
 .bonus
 {
-    text-rendering: unset;
     display: none;
 }
 .centered
@@ -116,10 +115,8 @@ a:visited {
 {
     h1{font-size: 85px;}
     h2{font-size: 16px;}
-    .image{height: 130px;}
+    .image{height: 125px;}
     /*.split > p{flex-basis: 250px;}*/
 }
-@media (min-width: 1525px)
-{
-    .bonus{display:inline;}
-}
+@media (min-width: 1525px) {#bonus1{display: inline;}}
+@media (min-width: 2025px) {#bonus2{display: inline;}}
