@@ -5,21 +5,23 @@ function toggleAudio(audio)
     else {audio.pause();}
 }
 
-// generate random number from 1-4
-var randomNumber = Math.floor(Math.random() * 4) + 1;
+// generate random number from 1-5
+var randomNumber = Math.floor(Math.random() * 5) + 1;
 
 // select audio track
-if (randomNumber in [1, 2])
+if ([1, 2].includes(randomNumber))
 {
     var audio = new Audio("./assets/sounds/mercy.mp3");
 }
-else if (randomNumber === 2)
+else if ([3, 4].includes(randomNumber))
 {
     var audio = new Audio("./assets/sounds/what must be done.mp3");
+    audio.volume = 0.5;
 }
 else
 {
     var audio = new Audio("./assets/sounds/conscience.mp3");
+    audio.volume = 0.6;
 }
 
 // toggle audio on image clicks
