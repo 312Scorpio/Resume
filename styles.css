@@ -64,15 +64,18 @@ a:visited {
 }
 .footer
 {
-    position: relative;
-    height: 180px;
+    position: absolute;
+    height: 25px;
     clear: both;
+    left: 30;
+    width: 100%;
 }
 .grid
 {
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: 240px 200px;
+    text-align: left;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: auto auto;
     gap: 5px;
 }
 .image
