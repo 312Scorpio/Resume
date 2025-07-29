@@ -62,6 +62,19 @@ a:visited {
 {
     text-align: center;
 }
+.footer
+{
+    position: relative;
+    height: 180px;
+    clear: both;
+}
+.grid
+{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 240px 200px;
+    gap: 5px;
+}
 .image
 {
     display: block;
@@ -81,6 +94,7 @@ a:visited {
 .light
 {
     background-color: #f8f8f856;
+    /*list-style: none;*/
 }
 .people
 {
