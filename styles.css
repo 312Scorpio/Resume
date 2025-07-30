@@ -128,7 +128,11 @@ a:visited {
 }
 
 /* Media Queries */
-@media only screen and (max-device-width: 760px) {#return{height: 3em;}}
+@media only screen and (max-device-width: 760px)
+{
+    #offset{font-size: 1.2rem;}
+    #return{height: 3em;}
+}
 @media (max-width: 900px)
 {
     h1{font-size: 85px;}
