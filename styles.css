@@ -130,7 +130,7 @@ a:visited {
 /* Media Queries */
 @media only screen and (max-device-width: 760px)
 {
-    #offset{font-size: 1.2rem;}
+    #offset{font-size: 1.4rem;}
     #return{height: 3em;}
 }
 @media (max-width: 900px)
