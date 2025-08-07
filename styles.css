@@ -74,9 +74,10 @@ a:visited {
 {
     display: grid;
     text-align: left;
-    grid-template-columns: 1fr 5fr;
-    grid-template-rows: auto auto;
-    gap: 5px;
+    grid-template-columns: 2fr 5fr;
+    grid-template-rows: 1, auto;
+    max-width: 830px;
+    gap: 30px;
 }
 .image
 {
@@ -126,6 +127,7 @@ a:visited {
     left: 30px;
     margin-right: 30px;
 }
+#note{text-align: center;}
 
 /* Media Queries */
 @media only screen and (max-device-width: 760px)
