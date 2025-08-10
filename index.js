@@ -32,3 +32,11 @@ document.addEventListener("keypress", function(event)
 {
     if (event.code == "Space" || event.keycode == 32) {toggleAudio(audio);}
 });
+
+// select profile image
+var image = document.getElementsByClassName("image")
+if ([1, 2].includes(randomNumber))
+{
+    image[0].src = "./assets/images/profile_2.png";
+    image[0].alt = "artistic image of Orlando created using ChatGPT";
+}
