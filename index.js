@@ -3,15 +3,15 @@ function rotateImage()
 {
     setInterval(function () {
         var image = document.getElementsByClassName("image");
-        if (image[0].src.indexOf("profile_2") !== -1)
-        {
-            image[0].src = "./assets/images/profile_1.png";
-            image[0].alt = "professional photo of Orlando";
-        }
-        else
+        if (image[0].src.indexOf("profile_1") !== -1)
         {
             image[0].src = "./assets/images/profile_2.png";
             image[0].alt = "artistic image of Orlando created using ChatGPT";
+        }
+        else
+        {
+            image[0].src = "./assets/images/profile_1.png";
+            image[0].alt = "professional photo of Orlando";
         }
     }, 15000);
 }
