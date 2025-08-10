@@ -1,3 +1,21 @@
+// rotate profile image
+function rotateImage()
+{
+    setInterval(function () {
+        var image = document.getElementsByClassName("image");
+        if (image[0].src.indexOf("profile_2") !== -1)
+        {
+            image[0].src = "./assets/images/profile_1.png";
+            image[0].alt = "professional photo of Orlando";
+        }
+        else
+        {
+            image[0].src = "./assets/images/profile_2.png";
+            image[0].alt = "artistic image of Orlando created using ChatGPT";
+        }
+    }, 15000);
+}
+
 // toggle audio
 function toggleAudio(audio)
 {
@@ -33,10 +51,11 @@ document.addEventListener("keypress", function(event)
     if (event.code == "Space" || event.keycode == 32) {toggleAudio(audio);}
 });
 
-// select profile image
-var image = document.getElementsByClassName("image")
+// set initial profile image and rotate persistently
+var image = document.getElementsByClassName("image");
 if ([1, 2].includes(randomNumber))
 {
     image[0].src = "./assets/images/profile_2.png";
     image[0].alt = "artistic image of Orlando created using ChatGPT";
 }
+rotateImage();
