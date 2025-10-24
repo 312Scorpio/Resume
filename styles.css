@@ -105,6 +105,11 @@ a:visited {
     font-size: 18pt;
     font-family: "Kolker Brush", system-ui;
 }
+.pressed
+{
+  box-shadow: 0 1px 1px 1px lightgray;
+  opacity: 0.6;
+}
 .split
 {
     display: inline-flex;

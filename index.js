@@ -16,11 +16,16 @@ function rotateImage()
     }, 15000);
 }
 
-// toggle audio
+// toggle audio and flicker image
 function toggleAudio(audio)
 {
     if (audio.paused) {audio.play();}
     else {audio.pause();}
+
+    document.images[0].classList.add("pressed");
+    setTimeout(function() {
+        document.images[0].classList.remove("pressed");
+    }, 150);
 }
 
 // generate random number from 1-5
